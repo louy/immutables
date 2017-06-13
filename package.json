@@ -1,0 +1,26 @@
+{
+  "name": "immutable",
+  "version": "0.0.1",
+  "description": "Helpers for dealing with immutable objects",
+  "main": "index.js",
+  "license": "GPL-3.0",
+  "author": "Louay Alakkad <louay@alakkad.me>",
+  "devDependencies": {
+    "@types/jest": "^19.2.4",
+    "jest": "^20.0.4",
+    "typescript": "^2.3.4"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": ["ts", "tsx", "js"],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/*.(ts|tsx|js)"
+    ]
+  }
+}
