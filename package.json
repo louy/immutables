@@ -7,15 +7,27 @@
   "author": "Louay Alakkad <louay@alakkad.me>",
   "devDependencies": {
     "@types/jest": "^19.2.4",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-typescript": "^0.1.0",
     "jest": "^20.0.4",
-    "typescript": "^2.3.4"
+    "typescript": "^2.3.4",
+    "typescript-eslint-parser": "^3.0.0"
   },
   "scripts": {
+    "lint": "eslint .",
     "build": "tsc -p .",
     "test": "jest"
   },
   "jest": {
-    "moduleFileExtensions": ["ts", "tsx", "js"],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/preprocessor.js"
     },

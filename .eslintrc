@@ -1,0 +1,7 @@
+extends: airbnb
+parser: typescript-eslint-parser
+plugins:
+  - typescript
+rules:
+  typescript/type-annotation-spacing: error
+  typescript/explicit-member-accessibility: error
