@@ -1,7 +1,7 @@
 {
   "name": "immutable",
   "version": "0.0.1",
-  "description": "Helpers for dealing with immutable objects",
+  "description": "Utility functions for dealing with vanilla objects and arrays in an immutable way",
   "main": "index.js",
   "license": "GPL-3.0",
   "author": "Louay Alakkad <louay@alakkad.me>",
