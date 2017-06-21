@@ -9,3 +9,5 @@ __tests__/
 
 .eslint*
 .travis.yml
+
+coverage/
