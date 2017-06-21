@@ -1,5 +1,5 @@
 {
-  "name": "immutable",
+  "name": "immutables",
   "version": "0.0.1",
   "description": "Utility functions for dealing with vanilla objects and arrays in an immutable way",
   "main": "index.js",
@@ -34,5 +34,13 @@
     "testMatch": [
       "**/__tests__/*.(ts|tsx|js)"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louy/immutables.git"
+  },
+  "bugs": {
+    "url": "https://github.com/louy/immutables/issues"
+  },
+  "homepage": "https://github.com/louy/immutables#readme"
 }
