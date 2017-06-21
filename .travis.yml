@@ -9,6 +9,9 @@ cache:
   yarn: true
   directories:
   - node_modules
+script:
+- yarn test -- --coverage
+- yarn run sendcoverage
 before_deploy:
 - yarn build -- --declaration
 deploy:
