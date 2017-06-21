@@ -1,6 +1,6 @@
 {
   "name": "immutables",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Utility functions for dealing with vanilla objects and arrays in an immutable way",
   "main": "index.js",
   "license": "GPL-3.0",

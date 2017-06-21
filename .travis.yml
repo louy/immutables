@@ -1,14 +1,20 @@
 language: node_js
-
 notifications:
   email:
     on_success: never
     on_failure: change
-
 node_js:
-  - "stable"
-
+- stable
 cache:
   yarn: true
   directories:
-    - node_modules
+  - node_modules
+before_deploy:
+- yarn build -- --declaration
+deploy:
+  provider: npm
+  on:
+    branch: master
+  skip_cleanup: true
+  api_key:
+    secure: hGL3yf0t1ngofsgFZiiFdxTFKpYDRktJjJUG0VI1Gps7QlXLRM9s/JholQ7mMkItGWdYHO6hHTMFgjZuJSUMUzx6pr995Dfg9yNHzRbDhOlJ/+YimNjCchTtjrvJlVIVxOpNecql7++VcgX1MmBhPl686ElNJEerY7ksRtoS5SyOKcWrkV8DHRw8pAnRRHsvUCjDtZOdwaU0c0efWQl9VUT9a3TBPCycpU7hcLDGIquvuX2b4BSEaX6/brujZtegzRhFFhUqVSjvASy/hzfMCEu3p5ivHTsRG12wGNf/RO/U1DkfJuP7rEqHlxj9yhWTwkSYGp63SgYHLo2VR0lxamJ8GbAOQ2o/KzlSNzFbfZ5qnEITAc4g/pZ+4yaRPhQr/Gm//4TwlqKhpAwmjO22hppx5rTZlvNGxQQfhGnkrZ5AzLY4cNGBfeqilkHVDMTdcAlOq4eulAytRQtF7x7uZyE6T4hYHIEYiKr6VHCJ4MUNcZdcc1EcOk0845DQ2X1fGvOlEtHJn6UDIyxTOot/r9TWLwFhaY4DGQZRdweFFwAcruDg4JMaAjXUhafnar+tthlyxgKt0dRb1G+5jzXpKcBRnodIvUJ6dGbUOBnrTytjEB4pUAEa8duGkTmqDWWjwQ7aEePZC1u4sSM3ckgH1A7k9q5r7VFqB2aZiBEaUgE=
