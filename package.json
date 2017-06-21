@@ -1,12 +1,13 @@
 {
   "name": "immutables",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Utility functions for dealing with vanilla objects and arrays in an immutable way",
   "main": "index.js",
   "license": "GPL-3.0",
   "author": "Louay Alakkad <louay@alakkad.me>",
   "devDependencies": {
     "@types/jest": "^19.2.4",
+    "codecov": "^2.2.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.2.0",
@@ -20,7 +21,8 @@
   "scripts": {
     "lint": "eslint .",
     "build": "tsc -p .",
-    "test": "jest"
+    "test": "jest",
+    "sendcoverage": "codecov"
   },
   "jest": {
     "moduleFileExtensions": [

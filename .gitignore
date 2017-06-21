@@ -6,3 +6,5 @@ coverage
 *.js
 !/preprocessor.js
 *.map
+
+*.d.ts

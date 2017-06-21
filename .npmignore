@@ -1,0 +1,11 @@
+.git
+node_modules/
+__tests__/
+*.md
+*.ts
+!*.d.ts
+
+/preprocessor.js
+
+.eslint*
+.travis.yml
